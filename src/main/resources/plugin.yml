@@ -1,0 +1,8 @@
+name: WhiteListPlugin
+version: '${project.version}'
+main: org.wangxyper.WhiteListPlugin.Main
+api-version: 1.18
+commands:
+  whitelist:
+    description: edit the whitelist
+    usage: /whitelist <add/remove> <playerName>
