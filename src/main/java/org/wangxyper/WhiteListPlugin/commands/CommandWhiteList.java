@@ -30,7 +30,7 @@ public class CommandWhiteList implements CommandExecutor, Listener {
         return true;
     }
     @EventHandler
-    public void onPlayerJoin(PlayerLoginEvent e){
+    public void onPlayerLogin(PlayerLoginEvent e){
         if (!Utils.whiteLists.getBoolean(e.getPlayer().getName()))
         {
             e.disallow(PlayerLoginEvent.Result.KICK_WHITELIST,Utils.pluginConfig.getString("MessageKickedByWhiteList"));
